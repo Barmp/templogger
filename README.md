@@ -18,12 +18,12 @@ This guide assumes you've installed Raspberry Pi OS and created an initial user 
 
 ```sudo bash /opt/templogger/configure_templogger.sh ``` 
 
-      > Updating the system, installing the required system tools
-      > * python3
-      > * i2c-tools 
-      > * python3-pip 
-      > * libgpiod-dev
-      >
-      > Installing the Python libraries indicated in the requirements.txt using pip3
-      > 
+      Updating the system, installing the required system tools
+       * python3
+       * i2c-tools 
+       * python3-pip 
+       * libgpiod-dev
+      
+       Installing the Python libraries indicated in the requirements.txt using pip3
+       
       > Create the systemd service to run the script 
