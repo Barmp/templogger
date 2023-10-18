@@ -1,0 +1,11 @@
+# /etc/systemd/system/temperature-probe.timer
+
+[Unit]
+Description=Run temperature-probe.service on a schedule
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target
