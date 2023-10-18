@@ -1,0 +1,20 @@
+# /etc/systemd/system/temperature-probe.service
+
+[Unit]
+Description=Reads data from SHT45 sensor and uploads to Adafruit IO
+After=network.target
+Wants=temperature-probe.timer
+
+[Service]
+
+Type=simple
+
+ExecStart=/usr/bin/python3 /opt/templogger/temp_probe.py
+WorkingDirectory=/opt/templogger
+
+TimeoutSec=20
+Restart=on-failure
+RestartSec=45
+
+[Install]
+WantedBy=multi-user.target
