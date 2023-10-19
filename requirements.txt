@@ -1,0 +1,7 @@
+setuptools
+adafruit-python-shell
+RPi.GPIO
+adafruit-blinka
+adafruit-circuitpython-sht4x
+adafruit-io
+configparser
