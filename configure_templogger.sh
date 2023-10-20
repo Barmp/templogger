@@ -38,6 +38,7 @@ cp /opt/templogger/temperature-probe.service /etc/systemd/system/.
 cp /opt/templogger/temperature-probe.timer /etc/systemd/system/.
 
 systemctl daemon-reload
+systemctl enable temperature-probe
 service temperature-probe start
 echo ""
 echo "Service installed."
