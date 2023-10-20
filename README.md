@@ -13,6 +13,7 @@ This guide assumes you've installed Raspberry Pi OS and created an initial user 
 ```sudo git clone https://github.com/Barmp/templogger.git /opt/templogger```
 
 3. Modify the /opt/templogger/adafruitio.conf file with your Adafruit credentials and feed names for the temperature and humidity data
+
 ```sudo nano /opt/templogger/adafruitio.conf```
 
 4. Run the configuration script, which completes the steps listed below: 
