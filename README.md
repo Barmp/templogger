@@ -18,7 +18,7 @@ This guide assumes you've installed Raspberry Pi OS and created an initial user 
 
 4. Run the configuration script, which completes the steps listed below: 
 
-```sudo bash /opt/templogger/configure_templogger.sh ``` 
+```cd /opt/templogger && sudo bash /opt/templogger/configure_templogger.sh ``` 
 
       Updating the system, installing the required system tools
        * python3
