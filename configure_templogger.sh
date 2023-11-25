@@ -33,7 +33,13 @@ echo "Python libraries installed!"
 echo ""
 echo "..."
 
-echo "installing as a system service"
+echo "Testing the sensor and sending data to Adafruit feeds."
+python3 /opt/templogger/test.py
+echo ""
+echo "Test complete!"
+echo "..."
+
+echo "Installing as a system service"
 cp /opt/templogger/temperature-probe.service /etc/systemd/system/.
 cp /opt/templogger/temperature-probe.timer /etc/systemd/system/.
 
