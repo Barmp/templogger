@@ -34,7 +34,7 @@ This guide assumes you've installed Raspberry Pi OS and created an initial user 
 A script called test.py has been added to the repository that can be run directly to query the sensor, print temperature and humidity data to the console, and send that data to the Adafruit feeds immediately. It can be run using the following command:
 ```sudo python3 /opt/templogger/test.py```
 
-To check if the I2C sensor is properly detected use the command. Look for the I2C address, in the case of the SHT45 chip it's 44.
+To check if the I2C sensor is properly detected use the command `sudo i2cdetect -y 1`. Look for the I2C address, in the case of the SHT45 chip it's 44.
 ```i2cdetect -y 1
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:                         -- -- -- -- -- -- -- --
